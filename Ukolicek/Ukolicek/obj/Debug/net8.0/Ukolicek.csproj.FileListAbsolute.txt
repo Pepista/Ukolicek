@@ -1,0 +1,14 @@
+Z:\VS)\Ukolicek\Ukolicek\bin\Debug\net8.0\Ukolicek.exe
+Z:\VS)\Ukolicek\Ukolicek\bin\Debug\net8.0\Ukolicek.deps.json
+Z:\VS)\Ukolicek\Ukolicek\bin\Debug\net8.0\Ukolicek.runtimeconfig.json
+Z:\VS)\Ukolicek\Ukolicek\bin\Debug\net8.0\Ukolicek.dll
+Z:\VS)\Ukolicek\Ukolicek\bin\Debug\net8.0\Ukolicek.pdb
+Z:\VS)\Ukolicek\Ukolicek\obj\Debug\net8.0\Ukolicek.GeneratedMSBuildEditorConfig.editorconfig
+Z:\VS)\Ukolicek\Ukolicek\obj\Debug\net8.0\Ukolicek.AssemblyInfoInputs.cache
+Z:\VS)\Ukolicek\Ukolicek\obj\Debug\net8.0\Ukolicek.AssemblyInfo.cs
+Z:\VS)\Ukolicek\Ukolicek\obj\Debug\net8.0\Ukolicek.csproj.CoreCompileInputs.cache
+Z:\VS)\Ukolicek\Ukolicek\obj\Debug\net8.0\Ukolicek.dll
+Z:\VS)\Ukolicek\Ukolicek\obj\Debug\net8.0\refint\Ukolicek.dll
+Z:\VS)\Ukolicek\Ukolicek\obj\Debug\net8.0\Ukolicek.pdb
+Z:\VS)\Ukolicek\Ukolicek\obj\Debug\net8.0\Ukolicek.genruntimeconfig.cache
+Z:\VS)\Ukolicek\Ukolicek\obj\Debug\net8.0\ref\Ukolicek.dll
