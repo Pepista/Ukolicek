@@ -1,43 +1,50 @@
 ﻿/*
 using System;
 
-class Program //Funkce (zkontroluje a odpoví)
+class Program
 {
+    // Hlavní metoda programu
     static void Main()
     {
-        while (true)
-        {
-            Console.Write("Zadej svůj věk (nebo 0 pro ukončení): ");
+        Console.Write("Zadej svůj věk: ");
+        int vek = int.Parse(Console.ReadLine());
 
-            if (!int.TryParse(Console.ReadLine(), out int vek))
-            {
-                Console.WriteLine("Neplatný vstup!");
-                continue;
-            }
+        string vysledek = VyhodnotVek(vek); // volání funkce
+        VypisZpravu(vysledek);              // volání procedury
+    }
 
-            if (vek == 0)
-                break;
+    // Funkce – vyhodnotí věk a vrátí text
+    static string VyhodnotVek(int vek)
+    {
+        if (vek < 0)
+            return "Věk nemůže být záporný.";
+        else if (vek < 18)
+            return "Jsi nezletilý.";
+        else
+            return "Jsi plnoletý.";
+    }
 
-            if (vek < 0)
-                Console.WriteLine("Věk nemůže být záporný.");
-            else if (vek < 18)
-                Console.WriteLine("Jsi nezletilý.");
-            else
-                Console.WriteLine("Jsi plnoletý.");
-
-            Console.WriteLine();
-        }
-
-        Console.WriteLine("Program ukončen.");
+    // Procedura – pouze vypíše text
+    static void VypisZpravu(string text)
+    {
+        Console.WriteLine(text);
     }
 }
 */
-/*
-using System;
 
-class Program //Procedura (jen vypíše text)
+/*
+ using System;
+
+class Program
 {
+    // Hlavní metoda programu
     static void Main()
+    {
+        VypisText(); // volání procedury
+    }
+
+    // Procedura – vypíše text 5×
+    static void VypisText()
     {
         for (int i = 0; i < 5; i++)
         {
@@ -45,30 +52,47 @@ class Program //Procedura (jen vypíše text)
         }
     }
 }
-*/
-/*
-using System;
 
-class Program //Funkce (Vypočítá a vrátí)
+ */
+
+/*
+ using System;
+
+class Program
 {
+    // Hlavní metoda programu
     static void Main()
+    {
+        int soucet = SpocitejSoucet(); // volání funkce
+        VypisVysledek(soucet);         // volání procedury
+    }
+
+    // Funkce – načte 5 čísel a vrátí jejich součet
+    static int SpocitejSoucet()
     {
         int soucet = 0;
 
         for (int i = 1; i <= 5; i++)
         {
-            Console.WriteLine("Zadej číslo:");
+            Console.Write("Zadej číslo: ");
             int cislo = int.Parse(Console.ReadLine());
-
             soucet += cislo;
-            Console.WriteLine("Aktuální součet je: " + soucet);
-            Console.WriteLine();
         }
 
-        Console.WriteLine("Konečný součet všech čísel je: " + soucet);
+        return soucet;
+    }
+
+    // Procedura – vypíše konečný součet
+    static void VypisVysledek(int soucet)
+    {
+        Console.WriteLine("Konečný součet je: " + soucet);
     }
 }
-*/
+
+ */
+
+//------------------------------------------------------------------------------
+
 /*
 using System;
 
@@ -76,9 +100,10 @@ class Program
 {
     static void Main()
     {
-        VypisCisla(5);
+        VypisCisla(5); // volání procedury
     }
 
+    // Procedura – vypíše čísla od 1 do n
     static void VypisCisla(int n)
     {
         for (int i = 1; i <= n; i++)
@@ -90,23 +115,24 @@ class Program
 }
 */
 /*
-using System;
+ using System;
 
 class Program
 {
     static void Main()
     {
-        int vysledek = Nasob(3, 4);
+        int vysledek = Nasob(3, 4);       // volání funkce
         Console.WriteLine("Součin je: " + vysledek);
     }
 
+    // Funkce – vrátí součin dvou čísel
     static int Nasob(int a, int b)
     {
         return a * b;
     }
 }
 
-*/
+ */
 /*
  using System;
 
@@ -116,18 +142,20 @@ class Program
     {
         int cislo = 20;
 
-        ZvysHodnotou(cislo);
+        ZvysHodnotou(cislo);              // předání hodnotou – nepřepíše původní proměnnou
         Console.WriteLine("Po předání hodnotou: " + cislo);
 
-        ZvysOdkazem(ref cislo);
+        ZvysOdkazem(ref cislo);            // předání odkazem – přepíše původní proměnnou
         Console.WriteLine("Po předání odkazem: " + cislo);
     }
 
+    // Procedura – zvýší hodnotu lokálně (předání hodnotou)
     static void ZvysHodnotou(int x)
     {
         x += 10;
     }
 
+    // Procedura – zvýší hodnotu přímo v původní proměnné (předání odkazem)
     static void ZvysOdkazem(ref int x)
     {
         x += 10;
@@ -145,10 +173,11 @@ class Program
         Console.Write("Zadej svůj věk: ");
         int vek = int.Parse(Console.ReadLine());
 
-        string vysledek = PopisVeku(vek);
+        string vysledek = PopisVeku(vek); // volání funkce
         Console.WriteLine("Výsledek: " + vysledek);
     }
 
+    // Funkce – vrátí textový popis věku
     static string PopisVeku(int vek)
     {
         if (vek < 10)
